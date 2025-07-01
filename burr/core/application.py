@@ -1297,7 +1297,7 @@ class Application(Generic[ApplicationStateType]):
         halt_before: list[str] = None,
         halt_after: list[str] = None,
         inputs: Optional[Dict[str, Any]] = None,
-    ) -> Tuple[Action, Optional[dict], State]:
+    ) -> Tuple[Action, Optional[dict], State[ApplicationStateType]]:
         """Runs your application through until completion, using async. Does
         not give access to the state along the way -- if you want that, use iterate().
 

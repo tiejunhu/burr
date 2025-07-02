@@ -31,7 +31,7 @@ class SyncTrackingClient(
     TODO -- create an async tracking client"""
 
     @abc.abstractmethod
-    def copy(self):
+    def copy(self) -> "SyncTrackingClient":
         pass
 
 
